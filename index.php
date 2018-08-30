@@ -1,6 +1,6 @@
 <?php
 // TBJE : i would recoment putting the following DB connection in a seperate file an inlude it instead
-
+//new comment
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -33,10 +33,10 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- Top Background Image Wrapper -->
-<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> 
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
   <!-- ################################################################################################ -->
   <div class="wrapper row1">
-    <header id="header" class="hoc clear"> 
+    <header id="header" class="hoc clear">
       <!-- ################################################################################################ -->
       <div id="logo" class="fl_left">
         <h1><a href="index.html">Basend</a></h1>
@@ -44,8 +44,8 @@ Licence URI: http://www.os-templates.com/template-terms
       <nav id="mainav" class="fl_right">
         <ul class="clear">
         <?php
-        // gennerate the menu items from database (the table pages)  
-        
+        // gennerate the menu items from database (the table pages)
+
         $sql = "SELECT id, navn FROM pages";
         $result = mysqli_query($conn, $sql);
 
@@ -59,7 +59,7 @@ Licence URI: http://www.os-templates.com/template-terms
         } else {
             echo "0 results";
         }
-        ?> 
+        ?>
         </ul>
       </nav>
       <!-- ################################################################################################ -->
@@ -69,10 +69,10 @@ Licence URI: http://www.os-templates.com/template-terms
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <section id="pageintro" class="hoc clear">
-    <div> 
+    <div>
       <!-- ################################################################################################ -->
       <?php
-        //Gets the content of the current page from DB 
+        //Gets the content of the current page from DB
         //NOTICE that the solution is vulnerable to hacking. See chapter 12 in the book for a explanation and solution
         $theSelectedPageId = $_GET['id'] ;
         $sql = "SELECT * FROM pages WHERE id=". $theSelectedPageId ;
@@ -87,12 +87,12 @@ Licence URI: http://www.os-templates.com/template-terms
         } else {
             echo "0 results";
         }
-      
-      
+
+
       ?>
-      
-      
-      
+
+
+
       <h2 class="heading"><?php echo $headline ?></h2>
       <p><?php echo $indhold ?></p>
       <footer><a class="btn" href="#">Vulputate</a></footer>
@@ -106,7 +106,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row2">
-  <section class="hoc container clear"> 
+  <section class="hoc container clear">
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
       <h6 class="heading">Velit id imperdiet</h6>
@@ -146,7 +146,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <main class="hoc container clear"> 
+  <main class="hoc container clear">
     <!-- main body -->
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
@@ -215,7 +215,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper overlay coloured">
-  <section class="hoc container clear"> 
+  <section class="hoc container clear">
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
       <h6 class="heading">Varius tristique</h6>
@@ -246,7 +246,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <section class="hoc container clear"> 
+  <section class="hoc container clear">
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
       <h6 class="heading">Justo nunc dapibus</h6>
@@ -316,7 +316,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row4 bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');">
-  <footer id="footer" class="hoc clear"> 
+  <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
     <div class="one_third first">
       <h6 class="heading">Basend</h6>
@@ -372,7 +372,7 @@ Licence URI: http://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row5">
-  <div id="copyright" class="hoc clear"> 
+  <div id="copyright" class="hoc clear">
     <!-- ################################################################################################ -->
     <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
